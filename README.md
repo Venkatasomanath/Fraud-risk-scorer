@@ -16,11 +16,10 @@ Your CSV should contain:
 ## Fraud Detection Flags
 6 Fraud Indicators Checked:
 1. Round Number Amounts
-•	Detects: Amounts that are multiples of 100 or 1000
-
-•	Why Suspicious: Fraudsters often use round numbers
-•	Examples: $100, $500, $1000
-•	Flag: round_num
+Detects: Amounts that are multiples of 100 or 1000
+Why Suspicious: Fraudsters often use round numbers
+Examples: $100, $500, $1000
+Flag: round_num
 3. Weekend Transactions
 •	Detects: Transactions on Saturdays or Sundays
 •	Why Suspicious: Reduced monitoring on weekends
