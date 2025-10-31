@@ -17,27 +17,28 @@ Your CSV should contain:
 6 Fraud Indicators Checked:
 1. Round Number Amounts
 •	Detects: Amounts that are multiples of 100 or 1000
+
 •	Why Suspicious: Fraudsters often use round numbers
 •	Examples: $100, $500, $1000
 •	Flag: round_num
-2. Weekend Transactions
+3. Weekend Transactions
 •	Detects: Transactions on Saturdays or Sundays
 •	Why Suspicious: Reduced monitoring on weekends
 •	Flag: weekend
-3. Large Amount Transactions
+4. Large Amount Transactions
 •	Detects: Top 5% of transaction amounts (95th percentile)
 •	Why Suspicious: Unusually large amounts vs normal activity
 •	Flag: large
-4. Suspicious Keywords
+5. Suspicious Keywords
 •	Detects: Suspicious terms in descriptions
 •	Keywords: cash, void, reverse, adjust, write-off, refund, urgent, gift
 •	Why Suspicious: Associated with fraudulent activities
 •	Flag: sus_keyword
-5. High-Volume Users
+6. High-Volume Users
 •	Detects: Users with >30% of total transaction volume
 •	Why Suspicious: Concentrated activity may indicate fraud
 •	Flag: high_user
-6. Backdated Transactions
+7. Backdated Transactions
 •	Detects: Transactions dated in the past
 •	Why Suspicious: Timing manipulation attempts
 •	Flag: backdated
