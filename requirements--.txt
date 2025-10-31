@@ -1,0 +1,24 @@
+
+## 2. requirements.txt
+pandas>=1.5.0
+numpy>=1.21.0
+altair>=4.2.0
+ipywidgets>=8.0.0
+jupyter>=1.0.0
+
+## 3. .gitignore
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+*.csv
+*.log
+*.xlsx
+*.json
+
